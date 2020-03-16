@@ -1,0 +1,4 @@
+sql_filesize_ext:SELECT FILE_FULL_PATH,FILE_TEXT,FILE_SIZE FROM(SELECT FILE_FULL_PATH,FILE_TEXT,FILE_SIZE ,count(FILE_SIZE) over(partition by FILE_SIZE) as OVERRAP FROM enm.origin_text )T1 where T1.OVERRAP >1
+sql_fullpath_ext:SELECT FILE_FULL_PATH,FILE_SIZE,FILE_TEXT FROM enm.origin_text where FILE_SIZE=
+sql_entry_ext:SELECT FILE_FULL_PATH, FILE_SIZE, FILE_TEXT FROM enm.origin_text
+sql_update:insert into em(FILE_FULL_PATH, FILE_DUP_PATH, FILE_NAME, FILE_SIZE) values(?,?,?,?)

@@ -1,0 +1,2 @@
+sql_compare_text:SELECT FILE_FULL_PATH,FILE_TEXT FROM enm.origin_text where FILE_FULL_PATH IN (SELECT FILE_FULL_PATH FROM enm.duplication_text)
+sql_compare_duppath:SELECT FILE_FULL_PATH,FILE_DUP_PATH FROM enm.duplication_text

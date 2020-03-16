@@ -1,0 +1,4 @@
+sql_filesize_ext:SELECT fullPath,text,fileSizeKB FROM(SELECT fullPath,text,fileSizeKB ,count(fileSizeKB) over(partition by fileSizeKB) as OVERRAP FROM news.finally_origin_200 )T1 where T1.OVERRAP >1
+sql_fullpath_ext:SELECT fullPath,fileSizeKB,text FROM news.finally_origin_200 where filesizekb=
+sql_entry_ext:SELECT fullPath, filesizekb, text FROM finally_origin_200
+sql_update:update news.finally_origin_200 set duppath=?, dupfile=?, dup_yn=?, dup_num=? where fullpath=?

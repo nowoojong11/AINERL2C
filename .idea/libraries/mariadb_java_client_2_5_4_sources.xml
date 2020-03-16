@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="mariadb-java-client-2.5.4-sources">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../eclipse/mariadb-java-client-2.5.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../eclipse/commons-io-2.6/commons-io-2.6-tests.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../eclipse/commons-io-2.6/commons-io-2.6.jar!/" />
+      <root url="jar://C:/AINerCoreAPI/lib/kr/datasolution/ainer/core/AINERCoreLibs/1.0/AINERCoreLibs-1.0.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../eclipse/commons-io-2.6/commons-io-2.6-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../eclipse/mariadb-java-client-2.5.4-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../eclipse/commons-io-2.6/commons-io-2.6-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../eclipse/commons-io-2.6/commons-io-2.6-test-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
